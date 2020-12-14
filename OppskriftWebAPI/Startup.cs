@@ -34,7 +34,7 @@ namespace OppskriftWebAPI
                 opt.UseSqlite(Configuration.GetConnectionString("Default"));
             });
 
-            // legger til Cors Policy
+            //  konfigurer Cors Policy
             services.AddCors( opt => 
             {
                 opt.AddPolicy("CorsPolicy", builder =>
@@ -45,12 +45,14 @@ namespace OppskriftWebAPI
                 });
             });
 
+            // legger til controllers
             services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -58,11 +60,12 @@ namespace OppskriftWebAPI
 
             app.UseHttpsRedirection();
 
+            // for routing, tillater subdomains
             app.UseRouting();
 
+            // setter Cors Policy 
             app.UseCors("CorsPolicy");
 
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

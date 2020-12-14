@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using OppskriftWebAPI.Data;
 using OppskriftWebAPI.Models;
 
-namespace OppskriftWebAPI.Controllers
+namespace OppskriftWebAPI.Controllers.Catalog
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -20,6 +20,8 @@ namespace OppskriftWebAPI.Controllers
         {
             _context = context;
         }
+
+
 
         // GET: api/RecipeCategories
         [HttpGet]

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace OppskriftWebAPI.Models
 {
+    /// <summary>
+    /// Klasse for oppskrift objekter
+    /// </summary>
     public class Recipe : IDbItem
     {
         public Guid Id { get; set; }

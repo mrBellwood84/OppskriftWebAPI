@@ -1,10 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace OppskriftWebAPI.Models
 {
+    /// <summary>
+    /// Kategori for oppskrift.
+    /// </summary>
+    /// <remarks>
+    /// Eksempel på kategori er "middag", "suppe", "kake"
+    /// </remarks>
     public class RecipeCategory : IDbItem
     {
         public Guid Id { get; set; }
