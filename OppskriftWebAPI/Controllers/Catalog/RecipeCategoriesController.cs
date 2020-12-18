@@ -22,7 +22,6 @@ namespace OppskriftWebAPI.Controllers.Catalog
         }
 
 
-
         // GET: api/RecipeCategories
         [HttpGet]
         public async Task<ActionResult<IEnumerable<RecipeCategory>>> GetRecipeCategories()
