@@ -9,8 +9,8 @@ using OppskriftWebAPI.Data;
 namespace OppskriftWebAPI.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20201218100526_dbmigrate")]
-    partial class dbmigrate
+    [Migration("20201219225541_migrate")]
+    partial class migrate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -68,6 +68,9 @@ namespace OppskriftWebAPI.Migrations
 
                     b.Property<string>("Tag")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("TimesUsed")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 

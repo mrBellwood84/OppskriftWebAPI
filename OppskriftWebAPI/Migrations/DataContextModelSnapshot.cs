@@ -67,6 +67,9 @@ namespace OppskriftWebAPI.Migrations
                     b.Property<string>("Tag")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("TimesUsed")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
 
                     b.HasIndex("RecipeId");

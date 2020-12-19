@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace OppskriftWebAPI.Migrations
 {
-    public partial class dbmigrate : Migration
+    public partial class migrate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -46,6 +46,7 @@ namespace OppskriftWebAPI.Migrations
                 {
                     Id = table.Column<Guid>(type: "TEXT", nullable: false),
                     Tag = table.Column<string>(type: "TEXT", nullable: true),
+                    TimesUsed = table.Column<int>(type: "INTEGER", nullable: false),
                     RecipeId = table.Column<Guid>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>

@@ -18,5 +18,9 @@ namespace OppskriftWebAPI.Models
         /// </summary>
         public string Tag { get; set; }
 
+        /// <summary>
+        /// Antall ganger søkeord er tatt i bruk
+        /// </summary>
+        public int TimesUsed { get; set; }
     }
 }
