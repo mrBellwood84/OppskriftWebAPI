@@ -9,7 +9,7 @@ namespace OppskriftWebAPI.Models
     /// <remarks>
     /// Eksempel er "søndagsmiddag", "fredagskos", "jul"
     /// </remarks>
-    public class RecipeSearchTag : IDbItem
+    public class RecipeSearchTag
     {
         public Guid Id { get; set; }
 

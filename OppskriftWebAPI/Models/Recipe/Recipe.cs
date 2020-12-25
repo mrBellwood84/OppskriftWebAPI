@@ -6,7 +6,7 @@ namespace OppskriftWebAPI.Models
     /// <summary>
     /// Klasse for oppskrift objekter
     /// </summary>
-    public class Recipe : IDbItem
+    public class Recipe
     {
         public Guid Id { get; set; }
 

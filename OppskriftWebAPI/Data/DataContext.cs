@@ -30,5 +30,12 @@ namespace OppskriftWebAPI.Data
         /// </summary>
         public DbSet<Recipe> Recipes { get; set; }
 
+
+
+        /// <summary>
+        /// Dataset for ingrediens kategorier
+        /// </summary>
+        public DbSet<IngredientCategory> IngredientCategories { get; set; }
+
     }
 }
