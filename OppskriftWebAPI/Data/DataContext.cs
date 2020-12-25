@@ -1,9 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OppskriftWebAPI.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace OppskriftWebAPI.Data
 {
@@ -29,8 +25,6 @@ namespace OppskriftWebAPI.Data
         /// Datasett for oppskrifter
         /// </summary>
         public DbSet<Recipe> Recipes { get; set; }
-
-
 
         /// <summary>
         /// Dataset for ingrediens kategorier
